@@ -79,12 +79,12 @@
 		4DE5198F2343CCA3005097C3 /* ImagePicker-Lab */ = {
 			isa = PBXGroup;
 			children = (
-				4DE519902343CCA3005097C3 /* AppDelegate.swift */,
-				4DE519922343CCA3005097C3 /* SceneDelegate.swift */,
-				4DE519942343CCA3005097C3 /* ViewController.swift */,
+				4DE519B22343CD15005097C3 /* Supporting Files */,
+				4DE519B52343CD6E005097C3 /* Model */,
+				4DE519B32343CD27005097C3 /* Controllers */,
+				4DE519B42343CD41005097C3 /* Views */,
 				4DE519962343CCA3005097C3 /* Main.storyboard */,
 				4DE519992343CCA4005097C3 /* Assets.xcassets */,
-				4DE5199B2343CCA4005097C3 /* LaunchScreen.storyboard */,
 				4DE5199E2343CCA4005097C3 /* Info.plist */,
 			);
 			path = "ImagePicker-Lab";
@@ -97,6 +97,38 @@
 				4DE519A92343CCA4005097C3 /* Info.plist */,
 			);
 			path = "ImagePicker-LabTests";
+			sourceTree = "<group>";
+		};
+		4DE519B22343CD15005097C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DE519902343CCA3005097C3 /* AppDelegate.swift */,
+				4DE519922343CCA3005097C3 /* SceneDelegate.swift */,
+				4DE5199B2343CCA4005097C3 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DE519B32343CD27005097C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DE519942343CCA3005097C3 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4DE519B42343CD41005097C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DE519B52343CD6E005097C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
