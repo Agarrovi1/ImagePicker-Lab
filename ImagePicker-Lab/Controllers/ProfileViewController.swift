@@ -22,9 +22,17 @@ class ProfileViewController: UIViewController {
             self.present(imagePickerController, animated: true, completion: nil)
         }
     }
+    private func setDefaults() {
+        if let profilePic = UserDefaultWrapper.manager.getPic() {
+            profileImageView.image = profilePic
+        } else {
+            return
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setDefaults()
     }
     
 }
@@ -33,6 +41,7 @@ extension ProfileViewController: UIImagePickerControllerDelegate,UINavigationCon
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.originalImage] as? UIImage else {return}
         profileImageView.image = image
+        UserDefaultWrapper.manager.setPic(image: image)
         dismiss(animated: true, completion: nil)
     }
 }
